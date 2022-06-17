@@ -1,0 +1,146 @@
+:root {
+    --cor-de-fundo: rgb(243, 243, 243);
+    --cor-box-login: #fff;
+    --borda-box-login: lightgray;
+    --botao-link: #0095f6;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--cor-de-fundo);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.container__principal {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.container__celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imagem__celular {
+    height: 50rem;
+}
+
+.container__login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    background-color: var(--cor-box-login);
+    border: 1px solid var(--borda-box-login);
+}
+
+.logo__instagram {
+    height: 3rem;
+}
+
+.foto__perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 7rem;
+    padding: 2rem 0;
+}
+
+.botao__login {
+    background-color: var(--botao-link);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 1rem;
+    border-radius: 5px;
+}
+
+.descricao__conta {
+    padding-top: 1rem;
+}
+
+.alterar__conta {
+    color: var(--botao-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .container__principal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container__principal {
+        width: 90%;
+    }
+
+    .container__celular {
+        display: none;
+    }
+
+    .container__login {
+        width: 100%;
+    }
+    
+    .container__login {
+        border: 1px solid transparent;
+    }
+
+    .download {
+        height: 50%;
+    }
+
+}
